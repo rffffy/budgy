@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Changa-Regular
+font link: https://www.fontsquirrel.com/fonts/changa
+font author: Eduardo Tunni
+font author site: http://www.tipo.net.ar/
+
+
+icon designer: Ben Davis
+icon designer link: /smashicons
+        
+{"bg":"#E8F4F0","icon-gradient-0":"#01695A","icon-gradient-1":"#2CC26F","font":"#04291D","slogan":"#183d31"}
+      

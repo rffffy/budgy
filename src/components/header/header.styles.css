@@ -1,0 +1,32 @@
+.header {
+	/* background: rgb(232, 244, 240); */
+	/* background: #c2e0d6; */
+	background: linear-gradient(to left, #8fc0b0, #c2e0d6);
+	/* box-shadow: -3px -13px 32px black; */
+	box-shadow: 1px 1px 6px rgba(68, 68, 68, 0.6);
+	padding: 6px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 62px;
+	box-sizing: border-box;
+	z-index: 100;
+}
+
+.logo {
+	width: 150px;
+}
+
+.options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.option {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #04291d;
+}

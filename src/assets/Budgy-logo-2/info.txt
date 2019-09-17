@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Karla-Italic
+font link: https://fonts.google.com/specimen/Karla
+font author: Jonny Pinhorn
+font author site: https://twitter.com/jonpinhorn_type
+
+
+icon designer: Sumana Chamrunworakiat
+icon designer link: /windy.windysky
+        
+{"bg-gradient-0":"#122663","bg-gradient-1":"#5DD7AD","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      

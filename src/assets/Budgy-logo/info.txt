@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Comfortaa-Light
+font link: https://fonts.google.com/specimen/Comfortaa
+font author: Johan Aakerlund
+font author site: https://aajohan.deviantart.com/
+
+
+icon designer: Ben Davis
+icon designer link: /smashicons
+        
+{"bg":"transparent","icon-gradient-0":"#122663","icon-gradient-1":"#5DD7AD","font":"#000000","slogan":"#141414"}
+      
