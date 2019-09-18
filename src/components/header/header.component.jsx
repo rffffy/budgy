@@ -9,7 +9,10 @@ const Header = () => (
 		<Logo className='logo'></Logo>
 		<div className='options'>
 			<a href='#' className='option'>
-				Budget
+				Dashboard
+			</a>
+			<a href='#' className='option'>
+				Transcations
 			</a>
 			<a href='#' className='option'>
 				Reports

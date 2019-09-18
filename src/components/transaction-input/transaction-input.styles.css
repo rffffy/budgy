@@ -1,0 +1,30 @@
+.transaction-input_container {
+	width: 40%;
+	border-radius: 3px;
+	background: rgba(245, 245, 245, 0.7);
+	box-shadow: 0px 0px 6px rgba(68, 68, 68, 0.6);
+}
+
+h3 {
+	text-align: center;
+}
+
+.mg-t {
+	margin-top: 6px;
+}
+
+.input-block {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+
+.radio-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.radio-button {
+	padding: 0 4px;
+}

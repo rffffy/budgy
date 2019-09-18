@@ -1,15 +1,19 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header/header.component";
-import Sidebar from "./components/sidebar/sidebar.component";
-import Budget from "./components/budget/budget.component";
+import TransactionInput from "./components/transaction-input/transaction-input.component";
+import BudgetOverview from "./components/budget-overview/budget-overview.component";
+import TransactionsOverview from "./components/transactions-overview/transactions-overview.component";
 
 function App() {
 	return (
 		<div className='App'>
 			<Header></Header>
-			<Sidebar></Sidebar>
-			<Budget />
+			<div className='main-container'>
+				<TransactionInput />
+				<BudgetOverview />
+				<TransactionsOverview />
+			</div>
 		</div>
 	);
 }

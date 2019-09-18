@@ -30,3 +30,7 @@
 	text-decoration: none;
 	color: #04291d;
 }
+
+.option:hover {
+	color: white;
+}
