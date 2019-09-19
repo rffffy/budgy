@@ -16,7 +16,12 @@ h3 {
 .input-block {
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
+}
+
+.input-element {
+	width: 30%;
+	margin-bottom: 25px;
 }
 
 .radio-buttons {

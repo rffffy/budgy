@@ -1,31 +1,30 @@
 import React from "react";
 
 import "./transaction-input.styles.css";
+import CustomInput from "../custom-input/custom-input.component";
+import CustomSelect from "../custom-select/custom-select.component";
+import CustomRadioButton from "../custom-radio-button/custom-radio-button.component";
 
 const TransactionInput = () => (
 	<div className='transaction-input_container'>
 		<h3>Enter your transaction</h3>
 		<div className='input-block'>
-			<div className='info-block'>
-				<label>Amount:</label>
-				<input className='mg-t' type='number'></input>
+			<div className='input-element'>
+				<CustomInput
+					label={"Amount (€)"}
+					placeholder={"Enter amount here"}
+					type={"number"}
+				/>
 			</div>
-			<div className='info-block'>
-				<label>Type:</label>
-				<div className='radio-buttons'>
-					<div className='radio-button'>
-						<input type='radio' />
-						<label>Income</label>
-					</div>
-					<div className='radio-button'>
-						<input type='radio' />
-						<label>Expense</label>
-					</div>
-				</div>
+			<div className='input-element'>
+				<CustomRadioButton />
 			</div>
-			<div className='info-block'>
-				<label>Category:</label>
-				<input className='mg-t' type='number'></input>
+			<div className='input-element'>
+				<CustomSelect
+					label={"Category"}
+					placeholder={"Click to select"}
+					disabled
+				/>
 			</div>
 		</div>
 	</div>

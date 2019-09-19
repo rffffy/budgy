@@ -3,7 +3,6 @@ import React from "react";
 import {
 	faBalanceScale,
 	faWallet,
-	faMoneyBill,
 	faMoneyBillWave
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

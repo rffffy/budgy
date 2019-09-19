@@ -1,0 +1,35 @@
+.input-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	/* width: 30%; */
+}
+
+label {
+	/* text-align: center; */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-input {
+	background: none;
+	background-color: rgba(245, 245, 245, 0.7);
+	color: darkslategrey;
+	font-size: 15px;
+	padding: 10px 0 4px 0;
+	display: block;
+	/* width: 100%; */
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid grey;
+	/* margin: 25px 0; */
+}
+
+.form-input:focus {
+	outline: none;
+}
