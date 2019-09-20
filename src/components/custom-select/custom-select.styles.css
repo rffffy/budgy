@@ -7,11 +7,15 @@
 	/* width: 30%; */
 }
 
-.custom-dropdown:hover,
-.custom-dropdown:hover * {
+.custom-select-element {
+	display: flex;
+}
+
+.custom-select-element:hover,
+.custom-select-element:hover * {
 	cursor: pointer;
-	color: darkgreen;
-	border-bottom-color: darkgreen;
+	color: green;
+	border-bottom-color: green;
 }
 
 .form-select {

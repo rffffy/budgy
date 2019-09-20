@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CustomSelect = ({ label, placeholder, type, disabled }) => (
 	<div className='select-group'>
 		<label>{label}</label>
-		<div className='custom-dropdown'>
+		<div className='custom-select-element'>
 			<FontAwesomeIcon
 				className='dropdown-arrow'
 				icon={faExternalLinkAlt}

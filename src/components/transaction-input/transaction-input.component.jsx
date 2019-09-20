@@ -4,6 +4,7 @@ import "./transaction-input.styles.css";
 import CustomInput from "../custom-input/custom-input.component";
 import CustomSelect from "../custom-select/custom-select.component";
 import CustomRadioButton from "../custom-radio-button/custom-radio-button.component";
+import CustomSelectPopUp from "../custom-select/custom-select-popup.component";
 
 const TransactionInput = () => (
 	<div className='transaction-input_container'>
@@ -20,11 +21,7 @@ const TransactionInput = () => (
 				<CustomRadioButton />
 			</div>
 			<div className='input-element'>
-				<CustomSelect
-					label={"Category"}
-					placeholder={"Click to select"}
-					disabled
-				/>
+				<CustomSelectPopUp label={"Category"} />
 			</div>
 		</div>
 	</div>
