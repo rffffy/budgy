@@ -34,25 +34,29 @@ const CustomRadioButton = ({ label }) => {
 		setSelectedValue(event.target.value);
 	}
 	return (
-		<div className='button-group'>
-			<label>Type</label>
+		<div className='custom-button-container'>
+			<label className='custom-button-label'>Type:</label>
 			<div className='radio-buttons'>
-				<label>Income:</label>
-				<GreenRadio
-					checked={selectedValue === "income"}
-					onChange={handleChange}
-					value='income'
-					name='radio-button-demo'
-					inputProps={{ "aria-label": "A" }}
-				/>
-				<label>Expense:</label>
-				<RedRadio
-					checked={selectedValue === "expense"}
-					onChange={handleChange}
-					value='expense'
-					name='radio-button-demo'
-					inputProps={{ "aria-label": "B" }}
-				/>
+				<div className='radio-button'>
+					<label>Income:</label>
+					<GreenRadio
+						checked={selectedValue === "income"}
+						onChange={handleChange}
+						value='income'
+						name='radio-button-demo'
+						inputProps={{ "aria-label": "A" }}
+					/>
+				</div>
+				<div className='radio-button'>
+					<label>Expense:</label>
+					<RedRadio
+						checked={selectedValue === "expense"}
+						onChange={handleChange}
+						value='expense'
+						name='radio-button-demo'
+						inputProps={{ "aria-label": "B" }}
+					/>
+				</div>
 			</div>
 		</div>
 	);

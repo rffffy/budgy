@@ -48,7 +48,7 @@ export default function CustomSelectPopUp({ label }) {
 		<div>
 			<div className='custom-select-pop-up-element'>
 				<label>{label}</label>
-				<Button onClick={handleClickOpen}>Open select dialog</Button>
+				<Button onClick={handleClickOpen}>Click to select</Button>
 			</div>
 			<DialogBox
 				classes={classes}

@@ -2,28 +2,16 @@ import React from "react";
 
 import "./custom-select.styles.css";
 
-import {
-	faSortDown,
-	faExternalLinkAlt
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const CustomSelect = ({ label, placeholder, type, disabled }) => (
-	<div className='select-group'>
-		<label>{label}</label>
-		<div className='custom-select-element'>
-			<FontAwesomeIcon
-				className='dropdown-arrow'
-				icon={faExternalLinkAlt}
-				size='1x'
-			/>
-			<input
-				className='form-select'
-				placeholder={placeholder}
-				type={type}
-				disabled={disabled}
-			/>
-		</div>
+const CustomSelect = ({ label, placeholder, type }) => (
+	<div className='custom-select-container'>
+		<label className='custom-select-label'>{label}</label>
+		<select class='form-select'>
+			<option>This is a native select element</option>
+			<option>Apples</option>
+			<option>Bananas</option>
+			<option>Grapes</option>
+			<option>Oranges</option>
+		</select>
 	</div>
 );
 

@@ -2,26 +2,26 @@ import React from "react";
 
 import "./transaction-input.styles.css";
 import CustomInput from "../custom-input/custom-input.component";
-import CustomSelect from "../custom-select/custom-select.component";
 import CustomRadioButton from "../custom-radio-button/custom-radio-button.component";
-import CustomSelectPopUp from "../custom-select/custom-select-popup.component";
+import CustomSelectPopUp from "../custom-select-popup/custom-select-popup.component";
+import CustomSelect from "../custom-select/custom-select.component";
 
 const TransactionInput = () => (
 	<div className='transaction-input_container'>
 		<h3>Enter your transaction</h3>
-		<div className='input-block'>
-			<div className='input-element'>
+		<div className='form-block'>
+			<div className='form-element'>
 				<CustomInput
-					label={"Amount (€)"}
+					label={"Amount (€):"}
 					placeholder={"Enter amount here"}
 					type={"number"}
 				/>
 			</div>
-			<div className='input-element'>
-				<CustomRadioButton />
+			<div className='form-element'>
+				<CustomSelect label={"Type:"} />
 			</div>
-			<div className='input-element'>
-				<CustomSelectPopUp label={"Category"} />
+			<div className='form-element'>
+				<CustomSelect label={"Category"} />
 			</div>
 		</div>
 	</div>
