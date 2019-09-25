@@ -1,0 +1,15 @@
+.custom-button-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+}
+
+.form-button {
+	color: white;
+	background: #1abc9c;
+	padding: 8px 36px 8px;
+	border-radius: 5px;
+	font-size: 14px;
+}

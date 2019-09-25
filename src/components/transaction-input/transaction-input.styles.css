@@ -21,8 +21,17 @@ h3 {
 	/* padding-bottom: 20px; */
 }
 
+form {
+	width: 100%;
+}
+
 .form-element {
 	width: 100%;
 	margin-bottom: 25px;
 	padding: 0 40px;
+}
+
+.submit-button {
+	margin: 33px 0px 16px;
+	width: 100%;
 }
