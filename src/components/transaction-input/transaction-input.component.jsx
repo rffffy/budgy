@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./transaction-input.styles.css";
+
 import CustomInput from "../custom-input/custom-input.component";
-import CustomRadioButton from "../custom-radio-button/custom-radio-button.component";
-import CustomSelectPopUp from "../custom-select-popup/custom-select-popup.component";
 import CustomSelect from "../custom-select/custom-select.component";
 import CustomButton from "../custom-button/custom-button.component";
+
+import dropdownData from "./dropdown-data";
 
 class TransactionInput extends React.Component {
 	constructor() {
@@ -15,12 +16,20 @@ class TransactionInput extends React.Component {
 			transactions: [],
 			amount: "",
 			type: "",
-			category: ""
+			category: "",
+			types: dropdownData.type,
+			categories: []
 		};
 	}
 
 	handleChange = event => {
+		let categories = [];
 		const { value, name } = event.target;
+
+		if (name === "type") {
+			categories = [...dropdownData.category[value]];
+			this.setState({ categories });
+		}
 		this.setState({ [name]: value });
 	};
 
@@ -41,6 +50,8 @@ class TransactionInput extends React.Component {
 	};
 
 	render() {
+		let { types, categories } = this.state;
+		console.log(this.state);
 		return (
 			<div className='transaction-input_container'>
 				<h3>Enter your transaction</h3>
@@ -62,6 +73,7 @@ class TransactionInput extends React.Component {
 								name={"type"}
 								label={"Type:"}
 								value={this.state.type}
+								options={types}
 								handleChange={this.handleChange}
 								required
 							/>
@@ -71,6 +83,7 @@ class TransactionInput extends React.Component {
 								name={"category"}
 								label={"Category"}
 								value={this.state.category}
+								options={categories}
 								handleChange={this.handleChange}
 								required
 							/>
