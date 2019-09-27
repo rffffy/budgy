@@ -1,9 +1,7 @@
 .header {
-	/* background: rgb(232, 244, 240); */
-	/* background: #c2e0d6; */
-	background: linear-gradient(to left, #8fc0b0, #c2e0d6);
-	/* box-shadow: -3px -13px 32px black; */
-	box-shadow: 1px 1px 6px rgba(68, 68, 68, 0.6);
+	/* background: linear-gradient(to left, #8fc0b0, #c2e0d6); */
+	/* box-shadow: 1px 1px 6px rgba(68, 68, 68, 0.6); */
+	box-shadow: 0px -2px 6px black;
 	padding: 6px 30px;
 	display: flex;
 	flex-direction: row;
@@ -32,5 +30,5 @@
 }
 
 .option:hover {
-	color: white;
+	color: #01a189;
 }

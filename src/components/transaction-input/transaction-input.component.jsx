@@ -27,7 +27,10 @@ class TransactionInput extends React.Component {
 		const { value, name } = event.target;
 
 		if (name === "type") {
-			categories = [...dropdownData.category[value]];
+			value !== ""
+				? (categories = [...dropdownData.category[value]])
+				: (categories.length = 0);
+
 			this.setState({ categories });
 		}
 		this.setState({ [name]: value });

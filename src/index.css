@@ -5,7 +5,8 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: rgb(232, 244, 240);
+	background-image: url("./assets/bg-blur.jpg");
+	/* background: rgb(232, 244, 240); */
 	/* box-sizing: border-box; */
 }
 

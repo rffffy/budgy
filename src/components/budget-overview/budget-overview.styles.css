@@ -2,8 +2,9 @@
 	width: 30%;
 	padding: 10px;
 	border-radius: 3px;
-	background: rgba(245, 245, 245, 0.7);
-	box-shadow: 0px 0px 6px rgba(68, 68, 68, 0.6);
+	background: white;
+	/* background: rgba(245, 245, 245, 0.7); */
+	box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.6);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
