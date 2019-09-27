@@ -1,5 +1,9 @@
 import React from "react";
 
+import { connect } from "react-redux";
+
+import { addTransaction } from "../../redux/transaction/transaction.actions";
+
 import "./transaction-input.styles.css";
 
 import CustomInput from "../custom-input/custom-input.component";
@@ -9,11 +13,10 @@ import CustomButton from "../custom-button/custom-button.component";
 import dropdownData from "./dropdown-data";
 
 class TransactionInput extends React.Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
-			transactions: [],
 			amount: "",
 			type: "",
 			category: "",
@@ -39,22 +42,25 @@ class TransactionInput extends React.Component {
 	handleSubmit = event => {
 		event.preventDefault();
 
+		let { addTransaction } = this.props;
+
 		let transaction = {};
 		let { amount, type, category } = this.state;
 
 		transaction = { amount, type, category };
+		addTransaction(transaction);
 
-		this.setState(prevState => {
-			let { transactions } = prevState;
-			transactions.push(transaction);
+		this.setState({ amount: "", type: "", category: "" });
+		// this.setState(prevState => {
+		// 	// let { transactions } = prevState;
+		// 	// transactions.push(transaction);
 
-			return { transactions, amount: "", type: "", category: "" };
-		});
+		// 	return { amount: "", type: "", category: "" };
+		// });
 	};
 
 	render() {
 		let { types, categories } = this.state;
-		console.log(this.state);
 		return (
 			<div className='transaction-input_container'>
 				<h3>Enter your transaction</h3>
@@ -106,4 +112,11 @@ class TransactionInput extends React.Component {
 	}
 }
 
-export default TransactionInput;
+const mapDispatchToProps = dispatch => ({
+	addTransaction: transactionItem => dispatch(addTransaction(transactionItem))
+});
+
+export default connect(
+	null,
+	mapDispatchToProps
+)(TransactionInput);
