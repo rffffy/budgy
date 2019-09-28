@@ -2,9 +2,9 @@
 	width: 30%;
 	padding: 10px;
 	border-radius: 3px;
-	background: white;
+	background: linear-gradient(0deg, rgba(57, 64, 31, 0.1), transparent);
 	/* background: rgba(245, 245, 245, 0.7); */
-	box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.6);
+	box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.9);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
