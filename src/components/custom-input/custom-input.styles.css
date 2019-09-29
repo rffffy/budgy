@@ -33,6 +33,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	/* width: 60%; */
 	border: 1px solid #4e9bab;
 	border-radius: 4px;
+	font-weight: 500;
 	/* border-bottom: 2px solid grey; */
 	/* margin: 25px 0; */
 }
