@@ -50,10 +50,9 @@ const TransactionInput = ({
 				return;
 			case "type":
 				updateTransactionFormType(value);
-				updateCategoryDropdown(value);
+				updateCategoryDropdown(value.toLowerCase());
 				return;
 			case "category":
-				debugger;
 				updateTransactionFormCategory(value);
 				return;
 		}
